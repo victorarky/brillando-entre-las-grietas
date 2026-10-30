@@ -1,0 +1,963 @@
+
+/* =========================================
+   BRILLANDO ENTRE LAS GRIETAS
+   Diseño editorial elegante
+   ========================================= */
+
+
+/* 1. VARIABLES DE DISEÑO */
+
+:root {
+
+    --color-background: #F8F3E9;
+
+    --color-background-dark: #EDE2CE;
+
+    --color-brown: #3B2416;
+
+    --color-brown-light: #8A5727;
+
+    --color-gold: #D9A653;
+
+    --color-gold-light: #E9C982;
+
+    --color-text: #3B2416;
+
+    --color-text-light: #796B5B;
+
+    --color-white: #FFFFFF;
+
+    --font-heading: 'Cormorant Garamond', serif;
+
+    --font-body: 'Inter', sans-serif;
+
+}
+
+
+/* 2. CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
+body {
+
+    font-family: var(--font-body);
+
+    background-color: var(--color-background);
+
+    color: var(--color-text);
+
+    line-height: 1.7;
+
+    overflow-x: hidden;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* 3. NAVEGACIÓN */
+
+.header {
+
+    width: 100%;
+
+    padding: 25px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: var(--color-background);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid rgba(59, 36, 22, 0.08);
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1;
+
+}
+
+
+.logo-title {
+
+    font-family: var(--font-heading);
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: var(--color-brown);
+
+}
+
+
+.logo-subtitle {
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: var(--color-brown-light);
+
+    margin-top: 5px;
+
+}
+
+
+.navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+}
+
+
+.navigation a {
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+
+}
+
+
+.navigation a:hover {
+
+    color: var(--color-brown-light);
+
+}
+
+
+.nav-button {
+
+    padding: 12px 22px;
+
+    border: 1px solid var(--color-brown);
+
+    transition: all 0.3s ease;
+
+}
+
+
+.nav-button:hover {
+
+    background-color: var(--color-brown);
+
+    color: var(--color-white) !important;
+
+}
+
+
+/* 4. PRESENTACIÓN PRINCIPAL */
+
+.hero {
+
+    min-height: 85vh;
+
+    padding: 90px 10%;
+
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+.hero-content {
+
+    max-width: 650px;
+
+    animation: fadeUp 1s ease both;
+
+}
+
+
+.eyebrow {
+
+    display: inline-block;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+    color: var(--color-brown-light);
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 {
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(65px, 7vw, 105px);
+
+    font-weight: 600;
+
+    line-height: 0.85;
+
+    letter-spacing: -3px;
+
+    color: var(--color-brown);
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    font-size: 0.55em;
+
+    font-weight: 500;
+
+    letter-spacing: 0;
+
+    margin: 18px 0;
+
+}
+
+
+.hero-description {
+
+    max-width: 450px;
+
+    font-size: 16px;
+
+    color: var(--color-text-light);
+
+    margin-top: 35px;
+
+    line-height: 1.9;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 40px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* 5. BOTONES */
+
+.button {
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 15px 28px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.button-primary {
+
+    background-color: var(--color-brown);
+
+    color: var(--color-white);
+
+    border: 1px solid var(--color-brown);
+
+}
+
+
+.button-primary:hover {
+
+    background-color: var(--color-brown-light);
+
+    border-color: var(--color-brown-light);
+
+    transform: translateY(-3px);
+
+}
+
+
+.button-secondary {
+
+    border: 1px solid rgba(59, 36, 22, 0.3);
+
+    color: var(--color-brown);
+
+}
+
+
+.button-secondary:hover {
+
+    background-color: var(--color-background-dark);
+
+}
+
+
+/* 6. PORTADA DEL LIBRO */
+
+.hero-book {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    animation: fadeIn 1.2s ease both;
+
+}
+
+
+
+/* PORTADA DEL LIBRO */
+
+.book-link {
+
+    display: block;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.book-cover {
+
+    width: 100%;
+
+    max-width: 390px;
+
+    border-radius: 3px;
+
+    box-shadow:
+
+        0 25px 50px rgba(59, 36, 22, 0.20),
+
+        0 8px 15px rgba(59, 36, 22, 0.10);
+
+    transition:
+
+        transform 0.5s ease,
+
+        box-shadow 0.5s ease;
+
+}
+
+
+.book-link:hover .book-cover {
+
+    transform: translateY(-8px) scale(1.015);
+
+    box-shadow:
+
+        0 35px 65px rgba(59, 36, 22, 0.25),
+
+        0 12px 20px rgba(59, 36, 22, 0.12);
+
+}
+
+
+.book-link:focus-visible {
+
+    outline: 2px solid var(--color-gold);
+
+    outline-offset: 6px;
+
+}
+
+
+
+.book-caption {
+
+    margin-top: 25px;
+
+    font-family: var(--font-heading);
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    color: var(--color-text-light);
+
+}
+
+
+/* 7. SECCIÓN DE LA HISTORIA */
+
+.story-section {
+
+    padding: 130px 20%;
+
+    background-color: var(--color-background-dark);
+
+    text-align: center;
+
+}
+
+
+.section-heading {
+
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+
+}
+
+
+.section-heading h2 {
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(42px, 5vw, 70px);
+
+    font-weight: 500;
+
+    line-height: 1.05;
+
+}
+
+
+.section-heading h2 span {
+
+    display: block;
+
+    color: var(--color-brown-light);
+
+    font-style: italic;
+
+}
+
+
+.story-content {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+}
+
+
+.story-content p {
+
+    font-size: 15px;
+
+    line-height: 2;
+
+    color: var(--color-text-light);
+
+    margin-bottom: 25px;
+
+}
+
+
+.story-highlight {
+
+    font-family: var(--font-heading);
+
+    font-size: 29px !important;
+
+    font-weight: 600;
+
+    line-height: 1.4 !important;
+
+    color: var(--color-brown) !important;
+
+    margin-top: 45px;
+
+}
+
+
+/* 8. SECCIÓN DE LA AUTORA */
+
+.author-section {
+
+    padding: 120px 10%;
+
+    text-align: center;
+
+    background-color: var(--color-background);
+
+}
+
+
+.author-content {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+}
+
+
+.author-content h2 {
+
+    font-family: var(--font-heading);
+
+    font-size: 65px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+
+}
+
+
+.author-content p {
+
+    font-size: 15px;
+
+    color: var(--color-text-light);
+
+}
+
+
+/* 9. SECCIÓN DE COMPRA */
+
+.buy-section {
+
+    padding: 110px 10%;
+
+    background-color: var(--color-brown);
+
+    text-align: center;
+
+    color: var(--color-background);
+
+}
+
+
+.buy-content {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+}
+
+
+.buy-section .eyebrow {
+
+    color: var(--color-gold-light);
+
+}
+
+
+.buy-section h2 {
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+
+}
+
+
+.buy-section p {
+
+    color: #D7C5AE;
+
+    font-size: 15px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.buy-button {
+
+    background-color: var(--color-gold);
+
+    border-color: var(--color-gold);
+
+    color: var(--color-brown);
+
+}
+
+
+.buy-button:hover {
+
+    background-color: var(--color-gold-light);
+
+    border-color: var(--color-gold-light);
+
+}
+
+
+.buy-note {
+
+    display: block;
+
+    margin-top: 20px;
+
+    font-size: 11px;
+
+    color: #D7C5AE;
+
+}
+
+
+/* 10. PIE DE PÁGINA */
+
+.footer {
+
+    padding: 45px 10%;
+
+    background-color: #2B1A10;
+
+    color: var(--color-background);
+
+    text-align: center;
+
+}
+
+
+.footer-title {
+
+    font-family: var(--font-heading);
+
+    font-size: 27px;
+
+    font-weight: 600;
+
+}
+
+
+.footer p {
+
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    color: #C9B69C;
+
+}
+
+
+.footer-copy {
+
+    display: block;
+
+    margin-top: 25px;
+
+    font-size: 10px;
+
+    color: #A18B70;
+
+}
+
+
+/* 11. ANIMACIONES */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+
+/* 12. DISEÑO RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .header {
+
+        padding: 20px 5%;
+
+    }
+
+
+    .navigation {
+
+        gap: 18px;
+
+    }
+
+
+    .hero {
+
+        padding: 70px 7%;
+
+        gap: 40px;
+
+    }
+
+
+    .story-section {
+
+        padding: 100px 10%;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .header {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+
+    .navigation {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+    }
+
+
+    .navigation a {
+
+        font-size: 11px;
+
+    }
+
+
+    .nav-button {
+
+        padding: 10px 15px;
+
+    }
+
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding: 60px 7%;
+
+        gap: 55px;
+
+    }
+
+
+    .hero-content {
+
+        margin: 0 auto;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: clamp(58px, 15vw, 85px);
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-book {
+
+        max-width: 330px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .story-section {
+
+        padding: 80px 7%;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 45px;
+
+    }
+
+
+    .story-highlight {
+
+        font-size: 25px !important;
+
+    }
+
+
+    .author-section {
+
+        padding: 80px 7%;
+
+    }
+
+
+    .author-content h2 {
+
+        font-size: 48px;
+
+    }
+
+
+    .buy-section {
+
+        padding: 80px 7%;
+
+    }
+
+
+    .footer {
+
+        padding: 40px 7%;
+
+    }
+
+}
+
+
+/* 13. RESPETO A LAS PREFERENCIAS DE MOVIMIENTO */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+
+    }
+
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: 0.01ms !important;
+
+        transition-duration: 0.01ms !important;
+
+    }
+
+}
