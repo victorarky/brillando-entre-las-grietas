@@ -961,3 +961,192 @@ img {
     }
 
 }
+
+
+/* =========================================
+   SECCIÓN DE LA AUTORA
+========================================= */
+
+.author-section {
+
+    padding: 120px 24px;
+
+    background-color: #F1E9DB;
+
+    color: #3B2416;
+
+}
+
+
+.author-container {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+
+.author-heading {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+
+}
+
+
+.author-heading .section-eyebrow {
+
+    display: block;
+
+    font-family: var(--font-body);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: #A9743E;
+
+    margin-bottom: 25px;
+
+}
+
+
+.author-heading h2 {
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(38px, 5vw, 64px);
+
+    font-weight: 500;
+
+    line-height: 1.15;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: #3B2416;
+
+}
+
+
+.author-divider {
+
+    width: 55px;
+
+    height: 1px;
+
+    background-color: #C69A58;
+
+    margin: 35px auto 0;
+
+}
+
+
+.author-biography {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-family: var(--font-body);
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #6F6253;
+
+}
+
+
+.author-biography p {
+
+    margin-bottom: 25px;
+
+}
+
+
+.author-biography .author-intro {
+
+    font-family: var(--font-heading);
+
+    font-size: 25px;
+
+    line-height: 1.6;
+
+    color: #3B2416;
+
+}
+
+
+.author-biography em {
+
+    color: #8C5A2B;
+
+}
+
+
+.author-biography .author-closing {
+
+    font-family: var(--font-heading);
+
+    font-size: 23px;
+
+    font-style: italic;
+
+    line-height: 1.6;
+
+    color: #3B2416;
+
+    margin-top: 40px;
+
+    margin-bottom: 0;
+
+}
+
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 768px) {
+
+    .author-section {
+
+        padding: 80px 24px;
+
+    }
+
+    .author-heading {
+
+        margin-bottom: 40px;
+
+    }
+
+    .author-biography {
+
+        font-size: 16px;
+
+        line-height: 1.8;
+
+    }
+
+    .author-biography .author-intro {
+
+        font-size: 22px;
+
+    }
+
+    .author-biography .author-closing {
+
+        font-size: 21px;
+
+    }
+
+}
+
+
+
